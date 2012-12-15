@@ -1,0 +1,2015 @@
+/* CSS Document - Default Andersen */
+body
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    scrollbar-base-color: #036;
+    scrollbar-arrow-color: FFF;
+    scrollbar-track-color: #gray;
+    scrollbar-shadow-color: gray;
+    scrollbar-lightshadow-color: gray;
+    scrollbar-darkshadow-color: gray;
+    scrollbar-highlight-color: white;
+    scrollbar-3dlight-color: gray; /* overflow: auto; */
+    color: #003366;
+}
+
+#banner
+{
+    text-align: center; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    margin-left: 5px; 
+    width: 960px;
+    border-top: 1px solid #fefbcd; 
+    border-bottom: 1px solid #e6e837;
+    background-color: #feffb1;     
+}
+
+.main
+{
+    width: 90%;
+    height: 100%;
+    border-right: 1px solid #036;
+    border-bottom: 1px solid #036;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}
+
+
+/* Center content */
+.center
+{
+    text-align: center;
+}
+
+.reset
+{
+    clear: both;
+}
+
+P
+{
+    margin: 10px 15px 10px 15px;
+    font-size: 10px;
+}
+
+H1
+{
+    margin: 10px 15px 10px 15px;
+    color: #036;
+    font-style: italic;
+}
+
+H2
+{
+    margin: 10px 15px 10px 15px;
+    color: #036;
+    font-style: italic;
+}
+
+H3
+{
+    margin: 20px 15px 20px 15px;
+    color: #036;
+    font-style: italic;
+}
+
+H4
+{
+    margin: 10px 15px 10px 15px;
+    color: #036;
+}
+
+H5
+{
+    margin: 10px 15px 10px 15px;
+    color: #036;
+}
+
+H6
+{
+    margin: 10px 15px 10px 15px;
+    color: #036;
+}
+
+H7
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+UL, DL
+{
+    list-style-image: url(Images/listElement.gif);
+    margin-left: 15px;
+}
+
+
+LI
+{
+    list-style-image: url(Images/listElement.gif);
+    margin-left: 30px;
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+/* geneste LI's */
+LI LI
+{
+    list-style-image: url(Images/listElement.gif);
+    margin-left: 15px;
+    margin-right: 5px;
+    font-size: 1em;
+}
+
+a:LINK, a:ACTIVE, a:VISITED
+{
+    color: #036;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+a:HOVER
+{
+    color: #036;
+    text-decoration: none;
+}
+
+.mainTable
+{
+    color: #036;
+    border: 1px solid #036;
+    margin-left: auto;
+	margin-right: auto;
+    font-size: 10px;
+}
+
+.mainTableData
+{
+    color: #000;
+    font-size: 10px;
+	width: 100%
+}
+
+.mainTableData th
+{
+    background-color: #036;
+    color: #FFF;
+    padding: 3px;
+}
+
+
+.mainTableData td
+{
+    padding: 3px;
+}
+
+
+.mainTablePrint
+{
+    color: #000;
+    border: 1px solid #036;
+    margin-left: 10px;
+    font-size: 10px;
+    text-align: left;
+}
+
+.mainTablePrint th
+{
+    background-color: #569BBD;
+    color: #FFF;
+    padding: 3px;
+    text-align: center;
+}
+
+
+.mainTablePrint td
+{
+    padding: 3px;
+}
+
+.subTablePrint
+{
+    font-size: 10px;
+}
+
+.pointer
+{
+    cursor: pointer;
+}
+
+/* GRID */
+.grid td
+{
+    border-top: 1px solid #036;
+}
+
+/* Grid Browser */
+.gridBrowser .secret
+{
+    visibility: hidden;
+    height: 0px;
+}
+
+/* HEADER */
+.headerLine
+{
+    height: 20px;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #E699AA;
+}
+
+.headerLineBlack
+{
+    border-bottom: 1px solid #000;
+}
+
+.langDivider
+{
+    color: #FC3;
+    margin: 5px;
+    font-weight: bold;
+}
+
+/* LOG IN*/
+.bgLogin
+{
+    height: 66px; /*width: 100%;*/
+    background-image: url(Images/bgLogin.jpg);
+    background-repeat: repeat-x;
+    color: #000;
+}
+
+.inputLogIn
+{
+    height: 16px;
+    width: 80px;
+    border: 1px solid #000;
+    font-size: 11px;
+}
+
+.labelLogin
+{
+    color: #000;
+    margin: 0px 0px 0px 10px;
+    font-size: 11px;
+    display: block;
+}
+
+.bgLogin a:Link, .bgLogin a:Active, .bgLogin a:Visited
+{
+    font-size: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.bgLogin a:Hover
+{
+    /* color: #000000; */
+    color: Black;
+    text-decoration: underline;
+}
+
+
+/* BG COLORS */
+.headerBG
+{
+    background-color: #003656;
+}
+
+.newsBG
+{
+    background-color: #CEAA7A;
+    vertical-align: top;
+}
+
+
+.bg1pxRed
+{
+    background-image: url(Images/bg1pxRed.gif);
+    background-repeat: repeat-x;
+}
+
+
+/* LANGUAGE STYLE */
+.language
+{
+    width: 188px;
+    height: 20px;
+    background-color: #569BBD;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+}
+
+.languageMargin
+{
+    margin-left: 10px;
+    padding-bottom: 2px;
+}
+
+
+.language .selected
+{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.language a:LINK, .language a:ACTIVE, .language a:VISITED
+{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+
+.language a:HOVER
+{
+    text-decoration: underline;
+    color: #CEAA7A;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/* BG IMAGES */
+.logoBG
+{
+    height: 68px;
+    width: 188px;
+    background-image: url(Images/logo.jpg);
+    background-repeat: no-repeat;
+}
+
+.topBanner
+{
+    height: 65px;
+    width: 188px;
+    background-image: url(Images/topBanner.jpg);
+    background-repeat: no-repeat;
+}
+
+.headerFoto1
+{
+    height: 86px;
+    width: 97px;
+    background-image: url(Images/headerFoto1.jpg);
+    background-repeat: no-repeat;
+}
+
+.headerFoto2
+{
+    height: 86px;
+    width: 97px;
+    background-image: url(Images/headerFoto2.jpg);
+    background-repeat: no-repeat;
+}
+
+.headerFoto3
+{
+    height: 86px;
+    width: 97px;
+    background-image: url(Images/headerFoto3.jpg);
+    background-repeat: no-repeat;
+}
+
+.headerFoto4
+{
+    height: 86px;
+    width: 97px;
+    background-image: url(Images/headerFoto4.jpg);
+    background-repeat: no-repeat;
+}
+
+.headerCorner
+{
+    height: 86px;
+    width: 70px;
+    background-image: url(Images/corner.jpg);
+    background-repeat: no-repeat;
+}
+
+.bgHeader
+{
+    height: 86px;
+    background-image: url(Images/bg1pxHeader.gif);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #000000;
+}
+
+.leftNav
+{
+    background-image: url(Images/bg1pxLeftNav.jpg);
+    background-repeat: repeat-y;
+}
+
+
+.bgLineOrange
+{
+    background-image: url(Images/bgLineOrange.gif);
+    background-repeat: repeat-x;
+    height: 10px;
+    width: 170px;
+}
+
+.bgLineWhite
+{
+    background-image: url(Images/bgLineWhite.gif);
+    background-repeat: repeat-x;
+    height: 10px;
+    width: 170px;
+}
+
+.bgLineBlack
+{
+    background-image: url(Images/bgLineBlack.gif);
+    background-repeat: repeat-x;
+    height: 10px;
+}
+
+.bgLineRed
+{
+    background-image: url(Images/bg1pxRed.gif);
+    background-repeat: repeat-x;
+    height: 6px;
+    width: 188px;
+}
+
+.bgNews
+{
+    height: 19px;
+    width: 10px;
+    background-color: #CEAA7A;
+}
+
+/* LEFT MENU */
+
+.leftMenu
+{
+    color: #CEAA7A;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 11px;
+	width: 175px;
+}
+
+
+.leftMenu .selected
+{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.leftMenu .arrow
+{
+    background-image: url(Images/arrow.gif);
+    width: 6px;
+    height: 11px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -12px;
+    margin-left: -10px;
+}
+
+
+.leftMenu a:Link, .leftMenu a:Active, .leftMenu a:Visited
+{
+    color: #CEAA7A;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.leftMenu a:Hover
+{
+    color: #569BBD;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.subNav
+{
+    margin: 0px 10px 5px 10px;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.subNav .selected
+{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.subNav .selected .arrow
+{
+    height: 10px;
+    width: 10px;
+    background-image: url(Images/arrowSub.gif);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -12px;
+}
+
+.subNav a:Link, .subNav a:Active, .subNav a:Visited
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.subNav a:Hover
+{
+    color: #569BBD;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+
+
+.thirdNav a:Link, .thirdNav a:Active, .thirdNav a:Visited
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 10px;
+}
+.thirdNav a:Hover
+{
+    color: #569BBD;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.thirdNav
+{
+    margin: 5px 15px 5px 10px;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 10px;
+}
+.thirdNav .selected
+{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 10px;
+}
+.thirdNav .selected .cube
+{
+    height: 5px;
+    width: 5px;
+    background-image: url(Images/cubeNav.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+
+
+/* FOOTER */
+.footer
+{
+    background-image: url(Images/bg1pxLeftNav.jpg);
+    background-repeat: repeat-y;
+    color: #FFF;
+    height: 20px;
+}
+
+.footerText
+{
+    /* BGIMAGE NEEDS TO BE CREATED */
+    background-color: #569BBD;
+    color: #FFFFFF;
+    height: 20px;
+    font-size: 11px;
+}
+
+.footerText a:LINK, .footerText a:VISITED, .footerText a:ACTIVE
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.footerText a:HOVER
+{
+    color: #036;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.copyright
+{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    color: #569BBD;
+	width: 168px;
+}
+
+/* NEWS */
+.newsBlock
+{
+    height: 19px;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #569BBD; /* BGIMAGE ... */
+}
+
+.newsBG
+{
+    vertical-align: top;
+    background-image: url(Images/bgNews.jpg);
+}
+
+.newsBlock .title
+{
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-left: 7px;
+    font-size: 11px;
+}
+
+.promoBlock
+{
+    height: 19px;
+    width: 100%;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    background-color: #569BBD; /* BGIMAGE ... */
+}
+
+.promoBlock .title
+{
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-left: 7px;
+    font-size: 11px;
+}
+
+/* DETAIL COMPONENT */
+.detail
+{
+    margin-right: 20px;
+    width: 250px;
+    border: 1px solid #036;
+    position: relative;
+}
+
+.detail .title
+{
+    border-bottom: 1px solid #036;
+    background-color: #569BBD;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px 5px 5px 20px;
+    font-size: 11px;
+}
+
+.detail .content
+{
+    /*text-align: justify;*/
+}
+
+.detail .detailCorner
+{
+    width: 19px;
+    height: 19px;
+    background-image: url(Images/cornerDetail.gif);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+/* Product Detail */
+hr
+{
+    color: #569BBD;
+    height: 1px; /*width: 98%;*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ProdDetail
+{
+    margin: 0px 20px 5px 20px; /*width: 100%;*/
+    border: 1px solid #036; /*display: block;*/
+}
+
+.ProdDetail .content span
+{
+    font-size: 0.7em;
+}
+
+.ProdDetailHide
+{
+    margin: 0px 20px 5px 20px; /*width: 100%;*/
+    border: 1px solid #036; /*display: block;*/
+}
+
+.ProdDetailHide .title
+{
+    border-bottom: 1px solid #036;
+    background-color: #569BBD;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px 5px 5px 20px;
+    font-size: 11px;
+    text-align: left;
+}
+
+.ProdDetail .title
+{
+    border-bottom: 1px solid #036;
+    background-color: #569BBD;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 5px 5px 20px;
+    font-size: 11px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.ProdDetail .techtitle
+{
+    border-bottom: 1px solid #000;
+    background-color: #C1002B;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px 5px 5px 20px;
+    font-size: 11px;
+    text-align: left;
+    vertical-align: middle;
+    height: 13px;
+}
+
+.ProdDetail .detailCorner
+{
+    width: 19px;
+    height: 19px;
+    background-image: url(Images/cornerDetail.gif);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.ProdDetail .detailCorner2
+{
+    width: 19px;
+    height: 19px;
+    background-image: url(Images/cornerDetail.gif);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.ImageAlignRight
+{
+    float: right;
+    vertical-align: top;
+    width: 100px;
+    height: 100px;
+}
+
+/* MARGINS */
+
+.margin10
+{
+    margin-left: 10px;
+}
+
+.margin5
+{
+    margin-left: 5px;
+}
+
+.marginRight10
+{
+    margin-right: 10px;
+}
+
+.margin15
+{
+    margin-left: 15px;
+}
+
+.marginRight25
+{
+    margin-right: 25px;
+}
+
+/*LABELS */
+
+.txt
+{
+    color: #036;
+}
+
+
+.alignRight
+{
+    text-align: right;
+    width: 75px;
+}
+
+
+/* buttons */
+.btPrevious
+{
+    border: 1px solid #036;
+    background-color: #CEAA7A;
+    background-image: url(Images/arrowPrevious.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px; /*color: #036;*/
+    text-indent: 7px;
+}
+
+.btNext
+{
+    border: 1px solid #036;
+    background-color: #CEAA7A;
+    background-image: url(Images/arrowNext.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px; /*color: #036;*/
+    display: inline;
+    padding-right: 15px;
+}
+
+.bt
+{
+    border: 1px solid #000;
+    background-color: #CEAA7A;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+    display: inline;
+}
+
+.btNextHide
+{
+    border: 1px solid #000;
+    background-color: #CEAA7A;
+    background-image: url(Images/arrowNext.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+    display: none;
+}
+
+.arrowNext
+{
+    width: 18px;
+    height: 18px;
+    background-image: url(Images/arrowNext.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arrowOpen
+{
+    width: 18px;
+    height: 18px;
+    background-image: url(Images/arrowOpen.gif);
+    background-repeat: no-repeat;
+    float: right;
+    clear: right;
+    cursor: pointer;
+}
+
+.arrowClose
+{
+    width: 18px;
+    height: 18px;
+    background-color: Green;
+    background-image: url(Images/arrowClose.gif);
+    background-repeat: no-repeat;
+    float: right;
+    cursor: pointer;
+}
+
+/* Configuration Wizard */
+.visibleContent
+{
+    display: inline;
+    height: 80px;
+}
+
+.invisibleContent
+{
+    display: none;
+    height: 80px;
+}
+
+.selectedStep
+{
+    background-color: #C1002B;
+    color: Yellow;
+    font-size: 1.0em;
+}
+
+.notSelectedStep
+{
+    background-color: #C1002B;
+    color: White;
+    font-size: 10px;
+}
+
+/* Loading Screen */
+#loading
+{
+    width: 300px;
+    position: absolute;
+    top: 49%;
+    left: 40%;
+    height: 110px;
+    z-index: 10000;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    background-image: url(Images/loading.gif);
+    background-repeat: no-repeat;
+    background-position: center center; /*background-color: #CEAA7A;*/
+    background-color: #569BBD;
+}
+#loading2
+{
+    width: 100%;
+    position: absolute;
+    top: 49%;
+    left: 40%;
+    height: 110px;
+    z-index: 10000;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    background-image: url(Images/loading.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #CEAA7A;
+    opacity: .0;
+    filter: alpha(opacity=0);
+    -moz-opacity: .00;
+}
+
+#loading3
+{
+    width: 300px;
+    position: absolute;
+    z-index: 10000;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    background-image: url(Images/loading.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #CEAA7A;
+}
+
+.OpacBackground
+{
+    position: absolute;
+    top: 0px;
+    left: 0px; /*width: 1600px; 	height: 975px;*/
+    z-index: 10000;
+    background-color: #CCC;
+    filter: alpha(opacity=50);
+    -moz-opacity: .50;
+    opacity: .50;
+}
+
+.OpacBackground3
+{
+    position: absolute;
+    z-index: 10000;
+    background-color: #CCC;
+    top: 0px;
+    left: 0px;
+    opacity: .50;
+    filter: alpha(opacity=50);
+    -moz-opacity: .50;
+}
+
+.nr1Selected
+{
+    width: 26px;
+    height: 17px;
+    background-image: url(Images/nr1Selected.gif);
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.nr1Selected span
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+    padding-left: 7px;
+}
+
+.nr1Unselected
+{
+    width: 26px;
+    height: 17px;
+    background-image: url(Images/nr1Unselected.gif);
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.nr1Unselected span
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    padding-left: 7px;
+}
+
+.nrSelected
+{
+    width: 28px;
+    height: 17px;
+    background-image: url(Images/nrSelected.gif);
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.nrSelected span
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+    padding-left: 9px;
+}
+
+.nrUnselected
+{
+    width: 28px;
+    height: 17px;
+    background-image: url(Images/nrUnselected.gif);
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.nrUnselected span
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    padding-left: 9px;
+}
+
+.ProdDetail .title .arrowTitle
+{
+    width: 22px;
+    height: 18px;
+    background-image: url(Images/arrowTitle.gif);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: bottom;
+}
+
+.propVisibleContent
+{
+    display: inline;
+}
+
+.propInVisibleContent
+{
+    display: none;
+}
+
+
+.hide
+{
+    display: none;
+    visibility: hidden;
+}
+
+.basket
+{
+    margin-left: 18px;
+    border-top: 1px solid #036;
+    border-right: 1px solid #036;
+    border-left: 1px solid #036;
+    font-size: 11px;
+    margin-right: 18px;
+    width: 94%;
+}
+
+.basket th
+{
+    background-color: #036;
+    color: #FFF;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+}
+
+.basket td
+{
+    padding: 5px;    
+    border-bottom: 1px solid #036;
+	width: 150px;
+}
+
+.basket td img
+{
+	width: expression(width > height ? 145 : auto);
+	height: expression(height > width ? 145 : auto);
+	max-width: 145px;
+	max-height: 145px;	
+}
+#resizeImage
+{
+	width: expression(width > height ? 465 : auto);
+	max-width: 465px;
+}
+
+.checkout
+{
+    margin-left: 18px;
+    border: 1px solid #036;
+    font-size: 11px;
+    margin-right: 18px;
+    width: 94%;
+}
+
+.checkout th
+{
+    background-color: #036;
+    color: #FFF;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+}
+
+.checkout td
+{
+    padding: 5px;
+    vertical-align: top;
+}
+
+.checkout .rightLine
+{
+    border-right: 1px solid #036;
+}
+
+
+.red
+{
+    color: #036;
+    font-weight: bold;
+}
+
+.context
+{
+    margin: 10px 15px 10px 15px;
+    font-size: 0.8em;
+}
+
+.Warranty
+{
+    background-image: url( "Images/warrantyCom.jpg" );
+    background-repeat: no-repeat;
+    width: 498px;
+    height: 202px;
+}
+
+/* Brochure */
+.brochure
+{
+    border: 1px solid #C1002B;
+    width: 160px;
+}
+
+.brochure .title
+{
+    background-color: #C1002B;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 18px;
+    text-align: center;
+}
+
+.brochure .note
+{
+    background-color: #C1002B;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 10px;
+}
+.brochure .picture
+{
+    height: 115;
+}
+
+
+
+a:Link.brochure, a:Active.brochure, a:Visited.brochure, a:Hover.brochure
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #C1002B;
+}
+
+/* Catalog */
+.catalog
+{
+    border: 1px solid #C1002B;
+    width: 177px;
+    margin-right: 4px;
+    margin-left: 10px;
+}
+
+.catalog .title
+{
+    background-color: #C1002B;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 18px;
+    text-align: center;
+}
+
+.catalog .note
+{
+    background-color: #C1002B;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+
+a:Link.catalog, a:Active.catalog, a:Visited.catalog, a:Hover.catalog
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #C1002B;
+}
+
+/* For inrepmap */
+#dhtmltooltip
+{
+    position: absolute;
+    left: -300px;
+    width: 150px;
+    border: 1px solid black;
+    padding: 2px;
+    background-color: lightyellow;
+    visibility: hidden;
+    z-index: 100; /*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+
+#dhtmlpointer
+{
+    position: absolute;
+    left: -300px;
+    z-index: 101;
+    visibility: hidden;
+}
+
+/*for map resizing */
+#mapResize 
+{
+	width: expression(width > height ? 700: auto);
+	max-width:	700px;
+}
+
+/* Marketing*/
+.marketing
+{
+    border: solid 1px #569BBD;
+    width: 150px;
+    height: 180px;
+    margin-right: 4px;
+}
+
+.marketing .title
+{
+    background-color: #569BBD;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 18px;
+    text-align: center;
+}
+.marketingHeader
+{
+    background-color: #569BBD;
+    color: #FFF;
+    padding: 2px 5px 3px 5px; /*height: 18px;*/
+    text-align: center;
+    font-size: 12px;
+}
+
+.marketing .note
+{
+    background-color: #569BBD;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+.marketingContent
+{
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.nodecoration
+{
+    vertical-align: middle;
+    border: none 0px #FFF;
+}
+
+.marketingLink
+{
+    height: 150px;
+    display: block;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-position: center;
+}
+
+.marketingLI
+{
+    display: inline;
+    margin: 0 0 0 0;
+}
+
+a:Link.marketing, a:Active.marketing, a:Visited.marketing, a:Hover.marketing
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #569BBD;
+}
+
+
+/* MapTips */
+.green
+{
+    color: Green;
+}
+.red
+{
+    color: Red;
+}
+
+/* Survey Grid */
+.underlineTD150
+{
+    border-bottom: solid 1px black;
+    width: 150px;
+}
+
+.surveyGridTable
+{
+    border: solid 1px silver;
+    border-bottom: solid 1px silver;
+    border-right: solid 1px silver;
+    border-left: none;
+    border-top: none;
+    font-size: 1pt;
+}
+.surveyGridTable td
+{
+    width: 12px;
+    height: 12px;
+    border-top: solid 1px silver;
+    border-left: solid 1px silver;
+}
+
+/***** CSS for photomodule (productpages) *****/
+/* CSS for photomodule */
+.photomodule
+{
+    width: 245px;
+    color: white;
+    background: #003366;
+    border: 1px solid #000;
+    margin: 0px;
+    font-size: 0.7em;
+}
+
+
+.CaptionThumbnail
+{
+    height: 24px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 5px 7px 5px 18px;
+}
+
+
+.photomodule .ThumbnailPhoto
+{
+    cursor: pointer;
+    height: 50px;
+    margin: 2px;
+    width: 70px;
+    margin-top: 5px;
+}
+
+.photomodule .selected
+{
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.photomodule .unselected
+{
+    border: 1px solid #FC0;
+    cursor: pointer;
+}
+
+.photomodule .numbering
+{
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    padding-left: 10px;
+    text-align: left;
+}
+.photomodule div
+{
+    text-align: center;
+}
+
+.photomodule .numbering .selected
+{
+    border: 1px solid #FFFFFF;
+    font-weight: bold;
+    padding: 1px 3px 1px 3px;
+}
+
+.photomodule .numbering .unselected
+{
+    font-weight: bold;
+    padding: 1px 3px 1px 3px;
+    border: none;
+}
+
+
+
+.cornerDetail
+{
+    width: 19px;
+    height: 19px;
+    background-image: url(Images/ImgProductPages/cornerDetail.gif);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+.productTXT
+{
+    width: 50%;
+}
+
+.photomodule .arrow
+{
+    width: 9px;
+    height: 5px;
+    background-image: url(Images/ImgProductPages/photomoduleArrow.gif);
+    position: absolute;
+    margin-left: 33px; /*margin-top: -2px;*/
+    background-repeat: no-repeat;
+}
+
+/* CSS for TABS */
+.tabs th
+{
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+    width: 20%;
+    height: 19px;
+    font-size: 1em;
+}
+
+.tabs .selected
+{
+    background-color: white;
+    color: #003366;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    font-size: 0.7em;
+}
+
+.tabs .corner
+{
+    width: 19px;
+    height: 29px;
+    background-image: url(Images/ImgProductPages/cornerTabs.gif);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -3px;
+    margin-left: -1px;
+    float: left;
+}
+
+.tabs .content
+{
+    	border-left: 1px solid #000;
+    	border-right: 1px solid #000;
+    	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+}
+
+.tabs a:Link, .tabs a:Visited, .tabs a:Active
+{
+    /*color: #FFF;*/
+    color: white;
+    text-decoration: none;
+}
+
+.tabs a:Hover
+{
+    color: #CEAA7A;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/*** CSS for productpages Extra ***/
+.productcolor td
+{
+    border: 0px solid #003366;
+    font-size: 0.7em;
+}
+
+.productcolor
+{
+    border: 0px;
+}
+
+.prodSpecTable
+{
+    color: #036;
+    border: 1px solid #003366;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.prodSpecTable th
+{
+    background-color: #003366;
+    color: white;
+    padding: 3px;
+}
+
+
+.prodSpecTable td
+{
+    padding: 3px;
+}
+
+/* CSS for popimages */
+.productcolor
+{
+	position: relative;
+}
+
+.thumbnail span
+{
+	position: absolute;
+    visibility: hidden;
+	
+	background-color: #569BBD;
+    padding: 2px;
+    border: 1px solid #000;
+    color: #FFF;
+    text-decoration: none;
+
+	margin: -120px 0px 0px 30px;
+
+}
+
+a.thumbnail:hover span
+{
+    position: absolute;
+    visibility: visible;
+}
+/**** End CSS for popimages (productpages) ***/
+
+/*Links same size as text*/
+
+a:link.textLink, a:hover.textLink, a:visited.textLink, a:active.textLink
+{
+    font-size: 1em;
+    color: #036;
+}
+
+/* Fonts */
+
+li.fonts
+{
+    font-size: 1em;
+}
+
+.FreezePaneOff
+{
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+
+.FreezePaneOn
+{
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    visibility: visible;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+    z-index: 999;
+    opacity: .00;
+    filter: alpha(opacity=00);
+    -moz-opacity: .00;
+    padding-top: 20%;
+}
+.troubleAnchor a:HOVER, a:ACTIVE
+{
+    color: #C1002B; /*font-size:inherit;*/
+}
+
+/* MattingTrafic.aspx  */
+.mattingTraficTable
+{
+    width: 250;
+}
+
+/* CWT */
+.cwtLink
+{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 10px;
+}
+
+/* TrackingHistory */
+
+
+.trackingLink a:Link, .trackingLink a:Hover, .trackingLink a:Visited, .trackingLink a:Active
+{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+/* Progress Template Classes */
+.PGTFill
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    background-color: #CCC;
+    filter: alpha(opacity=50);
+    -moz-opacity: .50;
+    opacity: .50;
+}
+
+.PGTLoad
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10001;
+}
+
+/* Award */
+.awards
+{
+    border: 1px solid #003366;
+    width: 394px;
+    margin-right: 4px;
+    margin-left: 10px;
+}
+
+.awards .title
+{
+    background-color: #003366;
+    color: #FFF;
+    font-size: 11px;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 18px;
+    padding-top: 3px;
+}
+
+a:Link.awards, a:Active.awards, a:Visited.awards, a:Hover.awards
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #003366;
+}
+
+/* mission */
+
+.bgMission
+{
+    background-image: url(images/bgMission.gif);
+    background-repeat: no-repeat;
+    width: 322px;
+    height: 78px;
+}
+.OpenOrders
+{
+    color: Red;
+}
+.ShippedNotInvoiced
+{
+    color: Green;
+}
+.TitleBarStyle
+{
+    color: White;
+    font-weight: bold;
+    background-color: #003366;
+}
+.TitleBarStyle2
+{
+    color: White;
+    font-weight: normal;
+    background-color: #003366;
+}
+/* general table layout */
+.generalTable td
+{
+    font-size: 10px;
+}
+
+/* Added */
+a:link.textLink2, a:hover.textLink2, a:visited.textLink2, a:active.textLink2
+{
+    font-size: 11px;
+    color: Blue;
+}
+
+.bgGray
+{
+    background-color: #eeeeee;
+    width: 95%;
+}
+
+.borderRed
+{
+    border: solid 1px #003366;
+}
+
+/* ADDED BY COMPARER */
+.divConfig
+{
+    margin: 10px 15px 10px 15px;
+    font-size: 10px;
+}
+.borderRedLR
+{
+    border-left: solid 1px #C1002B;
+    border-right: solid 1px #C1002B;
+    border-top: solid 0px #C1002B;
+    border-bottom: solid 0px #C1002B;
+}
+.bgBlue
+{
+    background-color: #333399;
+}
+.videos
+{
+    border: 1px solid #C1002B;
+    width: 230px; /*204px;*/
+    margin-right: 4px;
+    margin-left: 10px;
+}
+.videos .title
+{
+    background-color: #C1002B;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 18px;
+    text-align: center;
+}
+.videos .note
+{
+    background-color: #C1002B;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 10px;
+}
+a:Link.videos, a:Active.videos, a:Visited.videos, a:Hover.videos
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #C1002B;
+}
+a:link.textLink, a:hover.textLink, a:visited.textLink, a:active.textLink
+{
+    font-size: 11px;
+}
+.SalesIntro
+{
+    border: 1px solid #C1002B;
+    width: 230px; /*204px;*/
+    margin-right: 4px;
+    margin-left: 10px;
+}
+.SalesIntro .title
+{
+    background-color: #C1002B;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 18px;
+    text-align: center;
+    font-size: 0.7em;
+}
+.icoPortrait
+{
+    background-image: url(  "Images/icoP.gif" );
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+.icoLandscape
+{
+    background-image: url(  "Images/icoL.gif" );
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+/*.cornerImage
+{
+    width: 19px;
+    height: 19px;
+    background-image: url(Images/cornerDetail2.gif);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 0px;
+}*/
+.network
+{
+    border: 1px solid #C1002B;
+    width: 160px;
+}
+.network .title
+{
+    background-color: #C1002B;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 18px;
+    padding-top: 3px;
+}
+.network .note
+{
+    background-color: #C1002B;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 10px;
+}
+a:Link.network, a:Active.network, a:Visited.network, a:Hover.network
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #C1002B;
+}
+.contact
+{
+    border: 1px solid #C1002B;
+    width: 228px;
+    margin-right: 4px;
+    margin-left: 10px;
+}
+.contact .title
+{
+    background-color: #C1002B;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 18px;
+    padding-top: 3px;
+}
+.contact .note
+{
+    background-color: #C1002B;
+    color: #FFF;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 10px;
+}
+a:Link.contact, a:Active.contact, a:Visited.contact, a:Hover.contact
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #C1002B;
+}
+ol.numbered
+{
+    list-style-image: none;
+    list-style-type: decimal;
+    margin-left: 10px;
+}
+li.numbered
+{
+    list-style-image: none;
+    list-style-type: decimal;
+    margin-left: 10px;
+}
+ul.fonts
+{
+    margin-left: 10px;
+}
+.photomodule .selected
+{
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+.photomodule .unselected
+{
+    border: 1px solid #FC0;
+    cursor: pointer;
+}
+.tabs a:Link, a:Hover, a:Visited, a:Active
+{
+    /*color: #FFF;*/
+    text-decoration: none;
+}
+#designImgTable
+{
+    width: 500px;
+    height: 300px;
+}
+.ImgLibHeader
+{
+    height: 25px;
+}
+.detailBorderTop td
+{
+    border-top: solid 1px #C1002B;
+}
+
+.errorPage p
+{
+    font-size: 14px;
+}
+
+.errorPage div
+{
+    text-align: center;
+}
+/*****************************************************/
