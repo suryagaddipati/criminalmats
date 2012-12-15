@@ -10,13 +10,17 @@ def import_products
   #   url = "http://www.andersenco.com" +u[:onclick].split("'")[1]
   #   import_product(url)
   # end
-  
- 
-   f = File.open("html/1.html")
-  Nokogiri::HTML(f).css(".gridBrowser").css('tr').each do |u| 
-    url = "http://www.andersenco.com" +u[:onclick].split("'")[1]
-    p url
-    import_product(url)
+
+  Dir['html/*.html'].each do | file_name | 
+    begin
+    f = File.open(file_name)
+    Nokogiri::HTML(f).css(".gridBrowser").css('tr').each do |u| 
+      url = "http://www.andersenco.com" +u[:onclick].split("'")[1]
+      p url
+      import_product(url)
+    end
+    rescue
+    end
   end
 
 end
@@ -32,10 +36,28 @@ def import_product(url)
   colors = extract_colors(doc)
   sizes = extract_sizes(doc)
   specifications = extract_specifications(doc)
+  features = []
   features = extract_features(doc)
+  extract_images(doc)
   data = {title:title, description: description, colors: colors, sizes: sizes, specifications: specifications , features: features}
-  # ShopifyAPI::Product.create("title" => title ,"body_html"=> body_html,"product_type" => "Entrance Mats Indoor")
  File.open("data/#{title}.yml", 'w') { |file| file.write(data.to_yaml) }
+end
+
+def extract_images(doc)
+  debugger
+ images =  doc.css('img').css('.ThumbnailPhoto').map { |x| x.attr('src') }.uniq.inject({}) do |out,x|
+  image_url = x.split('&').last.gsub('Small','Big')
+  out[image_url.gsub('/','_')] = "http://www.andersenco.com/Handlers/GeneralHandler.ashx?type=pPage&width=700&height=700&#{image_url}"
+   out
+ end
+ images.each do |image,url|
+   open(url) {|f|
+     File.open(image,"wb") do |file|
+       file.puts f.read
+     end
+   }
+ end
+ images
 end
 
 def extract_features(doc)
@@ -95,6 +117,7 @@ end
 
 # import_product('http://www.andersenco.com/ProductPages/EntranceMatsIndoor/WaterHogClassic.aspx')
 # import_product('http://www.andersenco.com/ProductPages/EntranceMatsIndoor/BrushHogPlus.aspx')
-import_products
+# import_products
 
 
+def export_to_shopify
