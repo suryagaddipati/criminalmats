@@ -3,7 +3,6 @@ require 'nokogiri'
 require 'open-uri'
 require 'htmlentities'
 require 'unicode'
-ShopifyAPI::Base.site = "https://44bc1926d4ea65a66bdf204559c62436:9936d683ce4e049df5d67acfb58f3dac@criticalmats-com.myshopify.com/admin/"
 
 def import_products
   # Nokogiri::HTML(open("http://www.andersenco.com/productcategory.aspx")).css(".gridBrowser").css('tr').each do |u| 
@@ -14,34 +13,40 @@ def import_products
   Dir['html/*.html'].each do | file_name | 
     begin
     f = File.open(file_name)
-    Nokogiri::HTML(f).css(".gridBrowser").css('tr').each do |u| 
+    doc = Nokogiri::HTML(f)
+    cat =   doc.css('h3').text.strip
+    doc.css(".gridBrowser").css('tr').each do |u| 
       url = "http://www.andersenco.com" +u[:onclick].split("'")[1]
       p url
-      import_product(url)
+      import_product(url,cat)
     end
-    rescue
+    rescue => e 
+      p e
     end
   end
 
 end
 
 
-def import_product(url)
+def import_product(url,cat)
   doc = Nokogiri::HTML(open(url))
 
 
-  # debugger
   title = extract_title(doc)
   description = extract_description(doc)
   colors = extract_colors(doc)
   sizes = extract_sizes(doc)
   specifications = extract_specifications(doc)
+  product_type =cat 
   features = []
   features = extract_features(doc)
-  extract_images(doc)
-  data = {title:title, description: description, colors: colors, sizes: sizes, specifications: specifications , features: features}
+  # extract_images(doc)
+  data = {title:title, description: description, colors: colors, sizes: sizes, specifications: specifications , features: features , product_type: product_type}
+
  File.open("data/#{title}.yml", 'w') { |file| file.write(data.to_yaml) }
 end
+
+
 
 def extract_images(doc)
   debugger
@@ -115,9 +120,53 @@ def extract_sizes(doc)
 end
 
 
-# import_product('http://www.andersenco.com/ProductPages/EntranceMatsIndoor/WaterHogClassic.aspx')
-# import_product('http://www.andersenco.com/ProductPages/EntranceMatsIndoor/BrushHogPlus.aspx')
-# import_products
 
 
+ShopifyAPI::Base.site = "https://44bc1926d4ea65a66bdf204559c62436:9936d683ce4e049df5d67acfb58f3dac@criticalmats-com.myshopify.com/admin/"
 def export_to_shopify
+  delete_all_products
+  Dir['data/*.yml'].each do |product_yml|
+  # Dir['data/WaterHog Masterpiece.yml'].each do |product_yml|
+    product_data =  YAML.load_file(product_yml)
+    shopify_data = to_shopify_data(product_data)
+    # debugger
+    res = ShopifyAPI::Product.create(shopify_data)
+    
+    debugger if res.errors.count > 0
+    p res
+  end
+end
+
+def to_shopify_data(p)
+  data = {}
+  data[:vendor] = 'The Andersen Co.'
+  data[:body_html] = p[:description] 
+  data[:product_type] = p[:product_type]
+  data[:title] = p[:title]
+  data[:options] = [{name: "Color",position: 1} , {name: "Size",position: 2}]
+  variants = p[:colors].inject([]) do |out,color| 
+     vars = p[:sizes].map{|size| create_variant(color,size)}
+    out << vars 
+    out
+  end
+  data [:variants] = variants.flatten[0...100]
+
+  data
+end
+def create_variant(color,size)
+  {
+    option1: color,
+    option2: size,
+  }
+end
+
+def delete_all_products
+  ShopifyAPI::Product.all.each do |product| 
+    ShopifyAPI::Product.delete(product.id) unless product.id == 110665327
+  end
+end
+
+export_to_shopify
+# import_product('http://www.andersenco.com/ProductPages/EntranceMatsIndoor/WaterHogClassic.aspx')
+# import_product('http://www.andersenco.com/ProductPages/InteriorMats/CleanStride.aspx')
+# import_products
