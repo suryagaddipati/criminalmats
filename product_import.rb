@@ -132,15 +132,18 @@ def export_to_shopify
     # debugger
     res = ShopifyAPI::Product.create(shopify_data)
     
-    debugger if res.errors.count > 0
-    p res
+     if(res.errors.count > 0)
+       # debugger
+       p product_yml
+       p res.errors.full_messages
+     end
   end
 end
 
 def to_shopify_data(p)
   data = {}
   data[:vendor] = 'The Andersen Co.'
-  data[:body_html] = p[:description] 
+  data[:body_html] = p[:description]  + features_html(p[:features])
   data[:product_type] = p[:product_type]
   data[:title] = p[:title]
   data[:options] = [{name: "Color",position: 1} , {name: "Size",position: 2}]
@@ -153,6 +156,18 @@ def to_shopify_data(p)
 
   data
 end
+
+def features_html(features)
+  return "" if features.nil?
+  out = "<b>Features</b> <ul>"
+  features. each {|feature| 
+    out = out + "<li> #{feature} </li>"
+  }
+  out = out + "</ul>"
+  out
+end
+
+
 def create_variant(color,size)
   {
     option1: color,
