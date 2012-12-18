@@ -16,7 +16,14 @@
 - Navy Brush
 - Brown Brush
 - Burgundy Brush
-:sizes: []
+:sizes:
+- 2 x 3: 63.27
+- 3 x 5: 158.14
+- 3 x 10: 316.29
+- 4 x 6: 253.04
+- 4 x 8: 337.38
+- 5.4 x 8: 506.07
+
 :specifications:
   SURFACE: {}
   BACKING: {}

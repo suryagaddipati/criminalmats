@@ -1,4 +1,4 @@
----
+﻿---
 :title: Clean Stride
 :description: ! "<td valign=\"top\">\r\n                                <div style=\"margin-left:
   15px\">\r\n                                    <img alt=\"\" src=\"/Handlers/GeneralHandler.ashx?type=pPage&amp;width=330&amp;height=80&amp;img=InteriorMats/CleanStride/CleanStrideLogo.gif\">\n</div>\r\n
@@ -31,9 +31,10 @@
 - Orange
 - Purple
 :sizes:
-- ! 'Rubber x Frame:'
-- 26.5 x 32
-- 36.5 x 46
+- 26.5 x 32 : 44.03
+- 36.5 x 46: 78.17
+- 'Carpet/Rubber Frame: 26.5" x 63.5"': 88.40
+- 'Carpet/Rubber Frame: 36.5" x 92.5"': 153.20
 :specifications:
   SURFACE:
     ! 'FIBER TYPE:': Solution-dyed polypropylene, outstanding lightfastness

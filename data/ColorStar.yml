@@ -1,4 +1,4 @@
----
+﻿---
 :title: ColorStar
 :description: ! "<td valign=\"top\">\r\n                                <div style=\"margin-left:
   15px\">\r\n                                    <img alt=\"\" src=\"/Handlers/GeneralHandler.ashx?type=pPage&amp;width=330&amp;height=80&amp;img=InteriorMats/colorstar/colorstarLogo.jpg\">\n</div>\r\n
@@ -28,14 +28,14 @@
 - Black
 - Wine
 :sizes:
-- 2 x 3
-- 3 x 4
-- 3 x 5
-- 3 x 10
-- 4 x 6
-- 4 x 8
-- 4 x 10
-:specifications:
+- 2 x 3: 33.45
+- 3 x 4: 66.87
+- 3 x 5: 83.58
+- 3 x 10 : 167.12
+- 4 x 6 : 133.72
+- 4 x 8 : 178.27
+- 4 x 10 : 178.27
+specifications:
   SURFACE: {}
   BACKING: {}
   TESTING: {}

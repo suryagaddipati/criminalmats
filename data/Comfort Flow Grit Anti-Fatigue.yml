@@ -1,4 +1,4 @@
----
+﻿---
 :title: Comfort Flow Grit Anti-Fatigue
 :description: ! "<td valign=\"top\">\r\n\t\t\t\t\t\t\t\t<br><br><br><p>\r\n                                    ComfortFlow
   Grit mats are constructed of High Density Closed Cell Nitrile Rubber\r\n                                    Cushion
@@ -19,10 +19,10 @@
 :colors:
 - Black
 :sizes:
-- 2 x 3
-- 3 x 5
-- 3 x 9
-- 4 x 6
+- 2 x 3: 56.48
+- 3 x 5 : 127.25
+- 3 x 9: 203.49
+- 4 x 6 : 254.52
 :specifications:
   TESTING: {}
 :features:

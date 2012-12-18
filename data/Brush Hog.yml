@@ -1,4 +1,4 @@
----
+﻿---
 :title: Brush Hog
 :description: ! "<td valign=\"top\">\r\n                                <div style=\"margin-left:
   15px;\">\r\n                                    <img src=\"/Handlers/GeneralHandler.ashx?type=pPage&amp;width=120&amp;height=120&amp;img=EntranceMatsIndoor/BrushHog/tltBrushHog.gif\"
@@ -17,16 +17,26 @@
 - Brown Brush
 - Burgundy Brush
 :sizes:
-- 3 x 5
-- 3 x 6
-- 3 x 8
-- 3 x 10
-- 4 x 6
-- 4 x 8
-- 4 x 10
-- 6 x 8
-- 6 x 12
-:specifications:
+- 2 x 3: 58.84
+- 3 x 4: 117.66
+- 3 x 5: 147.08
+- 3 x 6 : 176.50
+- 3 x 8 : 235.32
+- 3 x 10 : 294.16
+- 3 x 12: 352.98
+- 3 x 16: 470.64
+- 3 x 20: 588.31
+- 4 x 6: 235.32
+- 4 x 8 : 313.76
+- 4 x 10 : 392.20
+- 4 x 12: 470.64
+- 4 x 16: 627.53
+- 4 x 20: 784.41
+- 6 x 8 : 470.64
+- 6 x 12 : 705.97
+- 6 x 16: 941.29
+- 6 x 20: 1176.61
+specifications:
   SURFACE: {}
   BACKING: {}
   BORDER: {}

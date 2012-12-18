@@ -1,4 +1,4 @@
----
+﻿---
 :title: ColorStar Crunch
 :description: ! "<td valign=\"top\">\r\n                                <div style=\"margin-left:
   15px\">\r\n                                    <img alt=\"\" src=\"/Handlers/GeneralHandler.ashx?type=pPage&amp;width=330&amp;height=80&amp;img=InteriorMats/colorstarcrunch/colorstarcrunchLogo.jpg\">\n</div>\r\n
@@ -15,13 +15,13 @@
 - Garnet Crunch
 - Sapphire Crunch
 :sizes:
-- 2 x 3
-- 3 x 4
-- 3 x 5
-- 3 x 10
-- 4 x 6
-- 4 x 8
-- 4 x 10
+- 2 x 3: 39.27
+- 3 x 4: 78.54
+- 3 x 5: 98.18
+- 3 x 10: 196.37
+- 4 x 6: 157.08
+- 4 x 8: 209.44
+- 4 x 10: 261.81
 :specifications:
   SURFACE:
     ! 'FIBER TYPE:': Solution-dyed BCF nylon, combined with extra course solution

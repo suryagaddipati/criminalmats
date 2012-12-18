@@ -49,7 +49,6 @@ end
 
 
 def extract_images(doc)
-  debugger
  images =  doc.css('img').css('.ThumbnailPhoto').map { |x| x.attr('src') }.uniq.inject({}) do |out,x|
   image_url = x.split('&').last.gsub('Small','Big')
   out[image_url.gsub('/','_')] = "http://www.andersenco.com/Handlers/GeneralHandler.ashx?type=pPage&width=700&height=700&#{image_url}"
@@ -129,11 +128,9 @@ def export_to_shopify
   # Dir['data/WaterHog Masterpiece.yml'].each do |product_yml|
     product_data =  YAML.load_file(product_yml)
     shopify_data = to_shopify_data(product_data)
-    # debugger
     res = ShopifyAPI::Product.create(shopify_data)
     
      if(res.errors.count > 0)
-       # debugger
        p product_yml
        p res.errors.full_messages
      end

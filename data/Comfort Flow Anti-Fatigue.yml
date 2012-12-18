@@ -1,4 +1,4 @@
----
+﻿---
 :title: Comfort Flow Anti-Fatigue
 :description: ! "<td valign=\"top\">\r\n                                <div style=\"margin-left:
   15px;\">\r\n                                    <img src=\"/Handlers/GeneralHandler.ashx?type=pPage&amp;width=330&amp;height=80&amp;img=AntiFatigueMatsWetAreas/ComfortFlow/tltComfortFlow.gif\"
@@ -19,10 +19,10 @@
 :colors:
 - Black
 :sizes:
-- 2 x 3
-- 3 x 5
-- 3 x 9
-- 4 x 6
+- 2 x 3 : 49.11
+- 3 x 5: 110.65
+- 3 x 9: 176.95
+- 4 x 6 : 221.32
 :specifications:
   TESTING: {}
 :features:
