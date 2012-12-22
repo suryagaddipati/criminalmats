@@ -201,6 +201,8 @@ end
 
 export_to_shopify
 # export_images
+# export_to_shopify
+# export_images
 # import_product('http://www.andersenco.com/ProductPages/EntranceMatsIndoor/WaterHogClassic.aspx')
 # import_product('http://www.andersenco.com/ProductPages/InteriorMats/CleanStride.aspx')
 # import_products
