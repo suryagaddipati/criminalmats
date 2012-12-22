@@ -19,11 +19,11 @@
 - Yellow
 - Green
 :sizes:
-- 2 x 3: 34.0
-- 3 x 5: 85.01
-- 3 x 10: 170.0
-- 4 x 6: 135.99
-- 4 x 10: 226.65
+- 2 x 3: 34.0, 8
+- 3 x 5: 85.01, 18
+- 3 x 10: 170.00, 32
+- 4 x 6: 135.99, 25
+- 4 x 10: 226.65, 41
 :specifications:
   MAT THICKNESS:
     ! 'OVERALL MAT THICKNESS:': 1/8"
