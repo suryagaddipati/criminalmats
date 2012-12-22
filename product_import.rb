@@ -49,6 +49,7 @@ end
 
 
 def extract_images(doc)
+  # debugger
  images =  doc.css('img').css('.ThumbnailPhoto').map { |x| x.attr('src') }.uniq.inject({}) do |out,x|
   image_url = x.split('&').last.gsub('Small','Big')
   out[image_url.gsub('/','_')] = "http://www.andersenco.com/Handlers/GeneralHandler.ashx?type=pPage&width=700&height=700&#{image_url}"
@@ -126,11 +127,16 @@ def export_to_shopify
   delete_all_products
   Dir['data/*.yml'].each do |product_yml|
   # Dir['data/WaterHog Masterpiece.yml'].each do |product_yml|
+    p product_yml
     product_data =  YAML.load_file(product_yml)
     shopify_data = to_shopify_data(product_data)
+    # debugger
     res = ShopifyAPI::Product.create(shopify_data)
     
+    product_data["id"]  = res.id
+ File.open(product_yml, 'w') { |file| file.write(product_data.to_yaml) }
      if(res.errors.count > 0)
+       # debugger
        p product_yml
        p res.errors.full_messages
      end
@@ -145,7 +151,8 @@ def to_shopify_data(p)
   data[:title] = p[:title]
   data[:options] = [{name: "Color",position: 1} , {name: "Size",position: 2}]
   variants = p[:colors].inject([]) do |out,color| 
-     vars = p[:sizes].map{|size| create_variant(color,size)}
+    # p p[:sizes]
+     vars = p[:sizes].map{|size_price| create_variant(color,size_price.keys.first,size_price.values.first)}
     out << vars 
     out
   end
@@ -165,10 +172,11 @@ def features_html(features)
 end
 
 
-def create_variant(color,size)
+def create_variant(color,size,price)
   {
     option1: color,
     option2: size,
+    price: price,
   }
 end
 
@@ -177,8 +185,22 @@ def delete_all_products
     ShopifyAPI::Product.delete(product.id) unless product.id == 110665327
   end
 end
+def export_images
+  Dir['data/*.yml'].each do |product_yml|
+    product_data =  YAML.load_file(product_yml)
+    p product_yml
+    p product_data["id"]
+    product = ShopifyAPI::Product.find(product_data["id"])
+    product.images.each {|img| product.delete("images/#{img.id}")}
+    # product.images.each {|id| p id;product.delete(:images, id.id.to_s)}
+    product_data[:images].each do |image|
+      product.post(:images,{}, {:image => {:src => image }}.to_json)
+    end
+  end
+end
 
 export_to_shopify
+# export_images
 # import_product('http://www.andersenco.com/ProductPages/EntranceMatsIndoor/WaterHogClassic.aspx')
 # import_product('http://www.andersenco.com/ProductPages/InteriorMats/CleanStride.aspx')
 # import_products
