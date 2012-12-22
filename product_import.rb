@@ -172,11 +172,14 @@ def features_html(features)
 end
 
 
-def create_variant(color,size,price)
+def create_variant(color,size,price_weight)
+  price = price_weight.split(',')[0].to_f
+  grams = price_weight.split(',')[1].to_f * 453.592
   {
     option1: color,
     option2: size,
     price: price,
+    grams: grams
   }
 end
 
@@ -211,8 +214,8 @@ def export_images
   end
 end
 
-# export_to_shopify
-export_images
+export_to_shopify
+# export_images
 # export_to_shopify
 # export_images
 # import_product('http://www.andersenco.com/ProductPages/EntranceMatsIndoor/WaterHogClassic.aspx')
