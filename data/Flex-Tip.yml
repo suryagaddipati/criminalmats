@@ -18,9 +18,9 @@
 :colors:
 - Black
 :sizes:
-- 22 x 32: 37.53
-- 32 x 39: 63.07
-- 36 x 72: 128.73
+- 22 x 32: 37.53, 12
+- 32 x 39: 63.07, 19
+- 36 x 72: 128.73, 39
 :specifications:
   SURFACE: {}
   TESTING: {}
