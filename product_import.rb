@@ -185,22 +185,34 @@ def delete_all_products
     ShopifyAPI::Product.delete(product.id) unless product.id == 110665327
   end
 end
-def export_images
-  Dir['data/*.yml'].each do |product_yml|
-    product_data =  YAML.load_file(product_yml)
-    p product_yml
-    p product_data["id"]
-    product = ShopifyAPI::Product.find(product_data["id"])
-    product.images.each {|img| product.delete("images/#{img.id}")}
-    # product.images.each {|id| p id;product.delete(:images, id.id.to_s)}
-    product_data[:images].each do |image|
-      product.post(:images,{}, {:image => {:src => image }}.to_json)
-    end
+
+def export_image(product,image)
+  begin
+    product.post(:images,{}, {:image => {:src => image }}.to_json)
+  rescue
+    p "Image not found #{image}"
   end
 end
 
-export_to_shopify
-# export_images
+def export_images
+  Dir['data/*.yml'].each do |product_yml|
+    product_data =  YAML.load_file(product_yml)
+    product = ShopifyAPI::Product.find(product_data["id"])
+    product.images.each {|img| product.delete("images/#{img.id}")}
+    # product.images.each {|id| p id;product.delete(:images, id.id.to_s)}
+   begin 
+    product_data[:images].each do |image|
+      export_image(product,image)
+      # export_image(product,image.gsub('lores','hires'))
+    end
+   rescue
+     p product_yml
+   end
+  end
+end
+
+# export_to_shopify
+export_images
 # export_to_shopify
 # export_images
 # import_product('http://www.andersenco.com/ProductPages/EntranceMatsIndoor/WaterHogClassic.aspx')
