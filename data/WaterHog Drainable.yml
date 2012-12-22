@@ -28,13 +28,13 @@
 - Purple
 - Camel
 :sizes:
-- 18" x 27": 21.08
-- 2' x 3': 37.5
-- 3' x 5': 93.72
-- 3' x 10': 187.42
-- 4' x 6': 149.92
-- 4' x 8': 230.64
-- 6' x 8': 345.95
+- 18" x 27": 21.08, 3
+- 2' x 3': 37.50, 5
+- 3' x 5': 93.72, 11
+- 3' x 10': 187.42, 20
+- 4' x 6': 149.92, 16
+- 4' x 8': 230.64, 21
+- 6' x 8': 345.95, 32
 :specifications:
   SURFACE:
     ! 'FIBER TYPE:': Needlepucnhed Solution-dyed polypropylene, outstanding light
