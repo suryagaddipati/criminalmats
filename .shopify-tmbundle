@@ -1,0 +1,11 @@
+use="test"
+
+[test]
+api_key="2fc826b80977d5ca903b3456c6d06ef5"
+password="e82f83956addbb14cfd4ee2c3799cc4c"
+store="mitchell-llc4921.myshopify.com"
+
+[criminalmats]
+api_key="44bc1926d4ea65a66bdf204559c62436"
+password="9936d683ce4e049df5d67acfb58f3dac"
+store="criticalmats-com.myshopify.com"

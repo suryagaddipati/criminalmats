@@ -4,7 +4,8 @@ require 'open-uri'
 require 'htmlentities'
 require 'unicode'
 
-ShopifyAPI::Base.site = "https://44bc1926d4ea65a66bdf204559c62436:9936d683ce4e049df5d67acfb58f3dac@criticalmats-com.myshopify.com/admin/"
+# ShopifyAPI::Base.site = "https://44bc1926d4ea65a66bdf204559c62436:9936d683ce4e049df5d67acfb58f3dac@criticalmats-com.myshopify.com/admin/"
+ShopifyAPI::Base.site = "https://2fc826b80977d5ca903b3456c6d06ef5:e82f83956addbb14cfd4ee2c3799cc4c@mitchell-llc4921.myshopify.com/admin/"
 def export_to_shopify(dir, vendor)
   delete_all_products(vendor)
   Dir["#{dir}/*.yml"].each do |product_yml|
@@ -100,5 +101,5 @@ def export_images
   end
 end
 
-export_to_shopify
-# export_images
+# export_to_shopify('data','')
+export_images

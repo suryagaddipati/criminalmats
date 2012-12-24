@@ -32,9 +32,9 @@
 - Purple
 - Camel
 :sizes:
-- 3' x 60': 1167.6
-- 4' x 60': 1555.8
-- 6' x 60': 2334.6
+- 3' x 60': 1167.6,0
+- 4' x 60': 1555.8,0
+- 6' x 60': 2334.6,0
 - 18" X 27": 18.97, 3
 - 2' x 3': 33.74, 5
 - 3' X 4': 67.50, 8
@@ -90,7 +90,7 @@
 - Highly durable and attractive fashion border makes it the perfect choice for indoor
   or outdoor applications.
 :product_type: Entrance Mats Indoor
-id: 115805540
+id: 115812778
 :images:
 - http://www.andersenco.com/Handlers/GalleryHandler.ashx?imgID=955&type=lores
 - http://www.andersenco.com/Handlers/GalleryHandler.ashx?imgID=997&type=lores
