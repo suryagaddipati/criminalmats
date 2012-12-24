@@ -84,8 +84,8 @@ def export_image(product,image)
   end
 end
 
-def export_images
-  Dir['data/*.yml'].each do |product_yml|
+def export_images(dir)
+  Dir["#{dir}/*.yml"].each do |product_yml|
     product_data =  YAML.load_file(product_yml)
     product = ShopifyAPI::Product.find(product_data["id"])
     product.images.each {|img| product.delete("images/#{img.id}")}
@@ -101,5 +101,5 @@ def export_images
   end
 end
 
-# export_to_shopify('data','')
-export_images
+# export_to_shopify('testdata','')
+export_images('testdata')
