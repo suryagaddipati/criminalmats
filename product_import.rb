@@ -125,7 +125,8 @@ def extract_swatches(doc,id,colors)
   doc.css('.thumbnail img').map{|x| x.attr('src')}.select{|x|x.include?'/th' }.each_with_index {|url,idx|
     p url
     open("http://www.andersenco.com/#{url}") {|f|
-         File.open("assets/swatche#{colors[idx].gsub('/','')}#{id}.jpg","wb") do |file|
+          return if colors[idx].nil?
+         File.open("assets/swatche#{colors[idx].gsub('/','').gsub(' ','-').downcase}#{id}.jpg","wb") do |file|
                 file.puts f.read
                    end
     }
@@ -148,7 +149,7 @@ end
 
 def extract_all_swatches
   Dir['html/*.html'].each do | file_name | 
-    # begin
+    begin
     f = File.open(file_name)
     doc = Nokogiri::HTML(f)
     cat =   doc.css('h3').text.strip
@@ -157,9 +158,9 @@ def extract_all_swatches
       # p url
       extract_product_swatch(url)
     end
-    # rescue => e 
-    #   p e
-    # end
+    rescue => e 
+      p e
+    end
   end
   
 end
