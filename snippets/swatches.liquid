@@ -174,7 +174,7 @@
         <div class="tooltip">{{ value }}</div>
         {% endif %}
         {% if is_color %}
-        <span style="background-color: {{ value | split: ' ' | last | handle }}; background-image: url({{ value | handle | append: '.png' | asset_url }})"></span>
+        <span style="background-color: {{ value | split: ' ' | last | handle }}; background-image: url({{ '/swatche'|	append: 	value | handle | append: product.id| append: '.jpg' | asset_url }})"></span>
         {% else %}
         <span>{{ value }}</span>
         {% endif %}

@@ -120,6 +120,50 @@ def extract_sizes(doc)
 end
 
 
+def extract_swatches(doc,id,colors)
+ p colors 
+  doc.css('.thumbnail img').map{|x| x.attr('src')}.select{|x|x.include?'/th' }.each_with_index {|url,idx|
+    p url
+    open("http://www.andersenco.com/#{url}") {|f|
+         File.open("assets/swatche#{colors[idx].gsub('/','')}#{id}.jpg","wb") do |file|
+                file.puts f.read
+                   end
+    }
+  }
+end
+
+
+def extract_product_swatch(url)
+  doc = Nokogiri::HTML(open(url))
+
+
+  title = extract_title(doc)
+  product_yml = "data/#{title}.yml"
+  return unless File.exist?(product_yml)
+  p product_yml
+ yml =  YAML.load(File.open(product_yml))
+extract_swatches(doc,yml['id'],yml[:colors])
+
+end
+
+def extract_all_swatches
+  Dir['html/*.html'].each do | file_name | 
+    # begin
+    f = File.open(file_name)
+    doc = Nokogiri::HTML(f)
+    cat =   doc.css('h3').text.strip
+    doc.css(".gridBrowser").css('tr').each do |u| 
+      url = "http://www.andersenco.com" +u[:onclick].split("'")[1]
+      # p url
+      extract_product_swatch(url)
+    end
+    # rescue => e 
+    #   p e
+    # end
+  end
+  
+end
+
 
 
 # export_to_shopify
@@ -127,3 +171,4 @@ end
 # import_product('http://www.andersenco.com/ProductPages/EntranceMatsIndoor/WaterHogClassic.aspx')
 # import_product('http://www.andersenco.com/ProductPages/InteriorMats/CleanStride.aspx')
 # import_products
+extract_all_swatches
